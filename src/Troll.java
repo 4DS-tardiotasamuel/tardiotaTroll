@@ -1,13 +1,15 @@
 public class Troll {
     private int health;
     private int atkDamage;
+    private int defence;
 
-    public Troll(int hp, int atk) throws Exception{
+    public Troll(int hp, int atk, int def) throws Exception{
         if(hp<0 || atk<0){
             throw new Exception("attributi non validi");
         }
         this.health = hp;
         this. atkDamage = atk;
+        this.defence = def;
     }
 
     public int getHealth() {
