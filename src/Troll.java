@@ -7,5 +7,15 @@ public class Troll {
         this. atkDamage = atk;
     }
 
+    public int getHealth() {
+        return health;
+    }
 
+    public int getAtkDamage() {
+        return atkDamage;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }
