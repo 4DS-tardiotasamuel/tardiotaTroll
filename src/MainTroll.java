@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MainTroll {
     public static void main(String[] args) {
-        int hp, atk, choice;
+        int hp, trollhp, atk, trollatk, def, trolldef, choice;
         boolean check = true;
         String[] races = {"Grappler", "Mage", "Assassin", "Swordsman", "Archer"};
         Troll troll = null;
@@ -16,6 +16,26 @@ public class MainTroll {
         do {
             choice = input.nextInt();
         }while(choice>0 && choice<6);
+
+        do{
+            try {
+                System.out.print("\nInserisci i tuoi punti salute: ");
+                hp = input.nextInt();
+                System.out.print("\nInserisci i tuoi punti attacco: ");
+                atk = input.nextInt();
+                System.out.print("\nInserisci i tuoi punti difesa: ");
+                def = input.nextInt();
+                System.out.print("\nInserisci i punti salute del nemico: ");
+                trollhp = input.nextInt();
+                System.out.print("\nInserisci i punti attacco del nemico: ");
+                trollatk = input.nextInt();
+                System.out.print("\nInserisci i punti difesa del nemico: ");
+                trolldef = input.nextInt();
+            }catch(Exception e){
+                System.out.println(e.getMessage());
+                check = false;
+            }
+        }while(!check);
 
 
 
