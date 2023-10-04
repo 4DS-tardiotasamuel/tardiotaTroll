@@ -15,7 +15,7 @@ public class MainTroll {
 
         do {
             choice = input.nextInt();
-        }while(choice<0 && choice>6);
+        }while(choice<0 || choice>6);
 
         do{
             try {
