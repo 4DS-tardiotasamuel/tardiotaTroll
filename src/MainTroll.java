@@ -19,6 +19,7 @@ public class MainTroll {
 
         do{
             try {
+                check = true;
                 System.out.print("\nInserisci i tuoi punti salute: ");
                 hp = input.nextInt();
                 System.out.print("\nInserisci i tuoi punti attacco: ");
@@ -39,6 +40,7 @@ public class MainTroll {
                 check = false;
             }
         }while(!check);
+
 
 
 

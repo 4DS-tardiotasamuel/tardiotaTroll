@@ -14,4 +14,14 @@ public class Player {
         this.defence = def;
         this.race = race;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "health=" + health +
+                ", atkDamage=" + atkDamage +
+                ", defence=" + defence +
+                ", race='" + race + '\'' +
+                '}';
+    }
 }

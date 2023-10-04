@@ -23,4 +23,13 @@ public class Troll {
     public void setHealth(int health) {
         this.health = health;
     }
+
+    @Override
+    public String toString() {
+        return "Troll{" +
+                "health=" + health +
+                ", atkDamage=" + atkDamage +
+                ", defence=" + defence +
+                '}';
+    }
 }
