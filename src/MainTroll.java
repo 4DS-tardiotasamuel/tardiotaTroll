@@ -15,7 +15,7 @@ public class MainTroll {
 
         do {
             choice = input.nextInt();
-        }while(choice>0 && choice<6);
+        }while(choice<0 && choice>6);
 
         do{
             try {
@@ -32,7 +32,7 @@ public class MainTroll {
                 trollatk = input.nextInt();
                 System.out.print("\nInserisci i punti difesa del nemico: ");
                 trolldef = input.nextInt();
-                p1 = new Player(hp, atk, def, races[choice]);
+                p1 = new Player(hp, atk, def, races[choice+1]);
                 troll = new Troll(trollhp, trollatk, trolldef);
 
             }catch(Exception e){
