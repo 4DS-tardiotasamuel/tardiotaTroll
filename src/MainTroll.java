@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class MainTroll {
     public static void main(String[] args) {
         int hp, atk, choice;
+        boolean check = true;
         String[] races = {"Grappler", "Mage", "Assassin", "Swordsman", "Archer"};
+        Troll troll = null;
+        Player p1 = null;
 
         Scanner input = new Scanner(System.in);
 
@@ -13,6 +16,8 @@ public class MainTroll {
         do {
             choice = input.nextInt();
         }while(choice>0 && choice<6);
+
+
 
     }
 }
