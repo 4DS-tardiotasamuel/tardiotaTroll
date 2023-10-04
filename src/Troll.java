@@ -4,7 +4,7 @@ public class Troll {
     private int defence;
 
     public Troll(int hp, int atk, int def) throws Exception{
-        if(hp<0 || atk<0){
+        if(hp<0 || atk<0 || def<0){
             throw new Exception("attributi non validi");
         }
         this.health = hp;
