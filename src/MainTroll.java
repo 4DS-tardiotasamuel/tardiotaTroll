@@ -41,8 +41,7 @@ public class MainTroll {
             }
         }while(!check);
 
-
-
+        System.out.println(p1.toString() + "\n" + troll.toString());
 
     }
 }
