@@ -6,7 +6,7 @@ public class Player {
     private String race;
 
     public Player(int hp, int atk, int def, String race) throws Exception{
-        if(hp<0 || atk<0){
+        if(hp<0 || atk<0 || def<0){
             throw new Exception("attributi non validi");
         }
         this.health = hp;
