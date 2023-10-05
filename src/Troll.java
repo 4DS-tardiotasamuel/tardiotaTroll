@@ -20,6 +20,10 @@ public class Troll {
         return atkDamage;
     }
 
+    public int getDefence() {
+        return defence;
+    }
+
     public void setHealth(int health) {
         this.health = health;
     }

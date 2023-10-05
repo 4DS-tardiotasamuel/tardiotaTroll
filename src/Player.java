@@ -15,6 +15,22 @@ public class Player {
         this.race = race;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAtkDamage() {
+        return atkDamage;
+    }
+
+    public int getDefence() {
+        return defence;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     @Override
     public String toString() {
         return "Player{" +
